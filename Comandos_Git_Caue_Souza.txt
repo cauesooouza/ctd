@@ -1,0 +1,37 @@
+Configurar usuario
+$ git config --global user.name "nome_do_usuario"
+$ git config --global user.email email@email.com
+
+Iniciando repositorio
+$ git init
+
+Clonando repositorio
+$ git clone
+
+Verificar status
+$ git status
+
+Adicionando arquivos
+$ git add . (adiciona todos)
+$ git add "nome_do_arquivo" (adiciona arquivo/diretorio)
+
+Removendo arquivos
+$ git rm "nome_do_arquivo" (remove arquivo/diretorio)
+
+"Criando uma linha do tempo" com comentario
+$ git commit -m"comentario aqui"
+
+Enviando repositorio local para remoto 
+$ git push
+
+Atualizando repositorio
+$ git pull
+
+Criar uma branch
+$ git branch "nome_da_branch"
+
+Acessar a branch 
+$ git checkout "nome_da_branch"
+
+Modo curto para criar uma branch e Acessar
+$ git checkout -b "nome_da_branch"
