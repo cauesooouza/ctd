@@ -16,7 +16,7 @@ header {
   flex-direction: column;
 }
 
-header .promo {
+.black-bar {
   width: 100%;
   background-color: #222222;
   padding: 4px;
@@ -27,37 +27,36 @@ header .promo {
   max-width: 1024px;
 }
 
-header .promo .container {
+.black-bar .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 0 30px 0 80px;
 }
 
-header .promo .container h2 {
+.black-bar .container h2 {
   font-size: 12px;
   font-weight: 400;
   color: #f3f3f3;
 }
 
-header .promo .container .options {
+.black-bar .container .options {
   display: flex;
   justify-content: space-between;
 }
 
-header .promo .container .options select {
+.black-bar .container .options select {
   background-color: transparent;
   border: none;
   color: #f3f3f3;
   margin: 0 12px;
 }
-header .promo .container .options select:focus-visible {
+.black-bar .container .options select:focus-visible {
   border: none;
   outline: none;
 }
 
-header .promo .container .options select option {
+.black-bar .container .options select option {
   background-color: #fff;
   color: #222222;
 }
@@ -77,8 +76,8 @@ header .head .container {
   padding: 0 40px;
 }
 
-header .head .container .brand {
-  display: inline-block;
+.container .brand {
+  display: flex;
   font-weight: 900;
   font-size: 40px;
   font-family: "Roboto";
@@ -86,7 +85,7 @@ header .head .container .brand {
   line-height: 23px;
 }
 
-header .head .container .brand img {
+.container .brand img {
   height: 23px;
 }
 
@@ -96,6 +95,19 @@ header .head .container .brand img {
 
 .is-white {
   color: #ffffff;
+}
+
+.is-yellow {
+  color: #f0a83e;
+}
+
+.f-center {
+  justify-content: center;
+}
+
+.f-between {
+  display: flex;
+  justify-content: space-between;
 }
 
 header .head nav {
@@ -134,10 +146,10 @@ section.hero .container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 12px;
 }
 
 section.hero .container .welcome {
-  margin-right: 12px;
   width: 365px;
   height: 85px;
   text-align: center;
@@ -239,7 +251,6 @@ section.contact-form .container {
 }
 
 section.contact-form .container form {
-  width: 350px;
   text-align: center;
 }
 
@@ -306,7 +317,7 @@ footer .newsletter {
 footer .newsletter .container {
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   padding: 5px 47px 5px 12px;
@@ -341,4 +352,53 @@ footer .newsletter .container .register button {
   border: none;
   color: white;
   cursor: pointer;
+}
+
+footer .contact-footer {
+  background: #3c2313;
+  padding: 25px 70px;
+}
+
+footer .contact-footer .info-company {
+  position: flex;
+  flex-direction: column;
+  height: 250px;
+}
+
+footer .contact-footer .info-company .info {
+  display: flex;
+  flex-direction: row;
+}
+
+.ico {
+  background: #8a8787;
+  border: 4px solid #786960;
+  background: #8a8787;
+  border-radius: 50px;
+  float: left;
+}
+
+.ico img {
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+}
+
+footer .contact-footer .info-company .info div {
+  margin-left: 25px;
+}
+
+footer .contact-footer .info-company .info h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+footer .contact-footer .info-company .info p {
+  color: #8a8787;
+}
+
+footer .contact-footer .brand {
+  display: flex;
+  align-items: center;
 }
