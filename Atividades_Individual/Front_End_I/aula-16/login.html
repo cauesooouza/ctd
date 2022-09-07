@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Heróis</title>
+    <link rel="stylesheet" href="./assets/style/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="alert flex-left">Desconto de 20%</div>
+      <div class="title flex-left">
+        <h1>
+          <a href="./">Super-heróis</a>
+        </h1>
+      </div>
+      <div class="panel">
+        <a href="./contact.html">Contato</a>
+        <a href="./register.html">Registro</a>
+        <a href="./login.html"> Login </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="form">
+        <h1>Login</h1>
+        <form action="./index.html">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              placeholder="Email"
+              autocomplete="none"
+              id="email"
+              minlength="6"
+              maxlength="24"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="Senha"
+              id="password"
+              minlength="8"
+              maxlength="56"
+              required
+            />
+            <img
+              src="./assets/img/show.png"
+              class="visibility"
+              id="visibility"
+            />
+          </div>
+          <div class="form-group wb">
+            <button type="submit" class="btn-submit">Entrar</button>
+          </div>
+          <div class="form-group wb">
+            Não possui uma conta?
+            <a href="./register.html" class="register-button">Registre-se</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>Todos os direitos reservados a Front-end I</footer>
+    <script src="./assets/script/main.js"></script>
+  </body>
+</html>
