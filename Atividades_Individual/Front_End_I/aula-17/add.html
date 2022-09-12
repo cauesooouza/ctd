@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Heróis</title>
+    <link rel="stylesheet" href="./assets/style/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="alert flex-left">Desconto de 20%</div>
+      <div class="title flex-left">
+        <h1>
+          <a href="./">Super-heróis</a>
+        </h1>
+      </div>
+      <div class="panel">
+        <a href="./contact.html">Contato</a>
+        <a href="./register.html">Registro</a>
+        <a href="./login.html"> Login </a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="form">
+        <h1>Adicionar seu super-herói</h1>
+        <h3>
+          Adicione seu personagem favorito completando as informações abaixo.
+        </h3>
+        <form action="./index.html">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" placeholder="Nome" required />
+          </div>
+          <div class="form-group">
+            <label for="nascimento">Nascimento</label>
+            <input
+              type="text"
+              id="nascimento"
+              placeholder="Data de Nascimento"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <textarea name="description" id="description" cols="100%" rows="10">
+            </textarea>
+          </div>
+          <div class="side">
+            <div class="form-group">
+              <label for="especie">Espécie</label>
+              <input type="text" id="especie" placeholder="Espécie" required />
+            </div>
+            <div class="form-group">
+              <label for="photo">Adicionar Foto</label>
+              <input
+                type="file"
+                id="photo"
+                accept="image/jpg,image/jpeg,image/png,image/gif"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="poderes">Poderes</label>
+              <input type="checkbox" name="voar" id="poderes" /> Voar
+              <input type="checkbox" name="inteligencia" id="poderes" /> Super
+              inteligência <input type="checkbox" name="laser" id="poderes" />
+              Raio laser
+              <input type="checkbox" name="riquesa" id="poderes" /> Dinheiro
+              infinito
+            </div>
+            <div class="form-group wb">
+              <button type="reset" class="btn-reset">Limpar</button>
+              <button type="submit" class="btn-submit">Adicionar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>Todos os direitos reservados a Front-end I</footer>
+    <script src="./assets/script/main.js"></script>
+  </body>
+</html>
