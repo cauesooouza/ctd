@@ -1,0 +1,35 @@
+body {
+  background-color: #e2e2e2;
+}
+.hero-section {
+  background-image: url(../img/scames-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cadeiras {
+  width: 26rem;
+  height: 180px;
+  background-image: url(../img/banner\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.computadores {
+  width: 26rem;
+  height: 180px;
+  background-image: url(../img/banner\ 1-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
